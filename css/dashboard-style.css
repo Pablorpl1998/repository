@@ -1,0 +1,397 @@
+:root{
+	--principal: #102F41;
+	--secundario: #02161F;
+	--terciario: #50B1A2;
+	--cuarto: #D4F9FF;
+	--blanco:#ffffff;
+	--negro:#000000;
+}
+
+p, ul ,li, h1, h2 , h3, h4 {
+  font-family: sans-serif;
+}
+
+h1{
+	font-weight: 600;
+	font-size: 2.5em;
+	text-align: center;
+}
+
+h2{
+	font-weight: 500;
+	font-size: 2em;
+	text-align: center;
+}
+
+
+h3{font-weight: 600;
+	font-size: 1em;
+	text-align: center;
+}
+
+*{	font-family: sans-serif;
+	margin:0px;
+	padding:0px;
+}
+
+body{
+	width: 100%;
+	height: auto;
+	background-color: var(--principal);
+}
+
+.container-web{
+	width: 100%;
+	height: auto;
+}
+
+.cabecera-web{
+	position: relative;
+	z-index: 10;
+	-webkit-box-shadow: 0px 6px 18px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 6px 18px -4px rgba(0,0,0,0.75);
+box-shadow: 0px 6px 18px -4px rgba(0,0,0,0.75);
+	width: 100%;
+	height: auto;
+	background-color: var(--secundario);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	box-shadow: 1;
+	position: fixed;
+}
+
+.block-left{
+	width: 15%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+#imagen-cabecera{
+	width:300px !important;
+	height: 150px;
+	object-fit: cover;
+}
+
+.block-center{
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.buscar-lupa{
+	width: 750px;
+	padding: 7px 0px 7px 0px;
+	margin-left: 10px;
+	background-color: transparent;
+	border: 1px solid var(--terciario);
+	border-radius: 10px;
+	color: var(--blanco);
+}
+
+.block-right{
+	width: 20%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+i {padding: 0px 15px 0px 15px;
+	font-size: 25px;
+	color:var(--blanco)
+}
+
+#exit:hover{
+	color:red !important;
+}
+
+i:hover{
+	color:var(--terciario );
+	cursor:pointer;
+}
+
+.block-right-2{
+	width: 15%;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-left: 1px solid var(--terciario)
+}
+
+#user-img{
+	width: 40px !important;
+}
+
+#user-img:hover{
+	width: 45px !important;
+}
+
+.block-right-2 h3{
+	margin-top: 10px;
+	color:var(--blanco);
+}
+
+.block-mobile, .block-mobile i{
+	display: none;
+}
+
+.estructura-izq{
+	width: 15%;
+	height: 88vh;
+	border-right: 2px solid var(--terciario);
+	position: fixed;
+	z-index: 1;
+	top: 180px;
+	background-color: var(--principal);
+	float: left;
+  }
+
+
+.block-left-fix{
+	cursor: pointer;
+	border-bottom: 1px solid var(--terciario);
+	padding: 15px 20px 10px 5px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.block-left-fix:hover{
+	background-color: var(--terciario);
+}
+
+.block-left-fix h4{
+	color: var(--blanco);
+}
+
+.block-left-fix i:hover{
+	color: var(--secundario) !important;
+}
+
+.block-left-fix h4:hover{
+	color: var(--negro);
+}
+
+.second-part-fixed{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: left;
+	margin-left: 20px;
+}
+.second-part-fixed h2{
+	font-size: 1.7em;
+	text-align: left;
+	color: var(--terciario);
+	margin-bottom: 10px;
+}
+
+.second-part-fixed p{
+	color: var(--terciario);
+}
+
+.second-part-fixed p:hover, .second-part-fixed h2:hover{
+	cursor: pointer;
+	color: var(--negro);
+}
+.estructura-mobile-left{
+	width: 100%;
+	background-color: var(--terciario);
+	height: 185vh;
+	z-index: 10000;
+	position: fixed;
+	top: 15vh;
+	display: flex;
+	flex-direction: column;
+	display: none;
+}
+
+.estructura-mobile-left .block-mobile-left{
+	cursor: pointer;
+	border-bottom: 1px solid var(--cuarto);
+	padding: 15px 20px 10px 5px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.estructura-mobile-left .block-mobile-left h4{
+	color: var(--blanco);
+}
+
+.estructura-derecha{
+	float: right;
+	width: 85%;
+	height: auto;
+	background-color: var(--principal);
+}
+
+.estructura-dashboard{
+	width: 100%;
+	height: auto;
+	background-color: var(--cuarto);
+	position: relative;
+}
+
+.cabecera-estructura-dashboard{
+	width: 100%;
+	height: auto;
+}
+
+.cabecera-estructura-dashboard h3{
+	font-size: 1.5em;
+	font-weight: 500;
+	text-align: left;
+	padding-left: 100px;
+	padding-top: 200px;
+	color: var(--secundario);
+}
+
+.cabecera-estructura-dashboard h3 span{
+	color: var(--terciario);
+	font-size: 0.8em;
+}
+
+.header-estructura-dashboard{
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+}
+.header-estructura-dashboard .banner{
+	margin-top: 20px;
+	width:90%;
+	border-radius: 15px;
+	height: 25vh;
+	background-color: #8B1874;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	-webkit-box-shadow: 0px 6px 18px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 6px 18px -4px rgba(0,0,0,0.75);
+box-shadow: 0px 6px 18px -4px rgba(0,0,0,0.75);
+}
+
+.header-estructura-dashboard .banner i{
+	color: var(--negro);
+	font-size: 1.2em;}
+
+.body-estructura-dashboard{
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap:wrap;
+	padding-bottom: 228px;
+}
+
+.box-dashboard-dates{
+	width: 350px;
+	height: 200px;
+	margin-top: 40px;
+	border-radius: 15px;
+}
+
+.box-dashboard-dates:nth-child(1){  background-color: #F15853;}
+
+.box-dashboard-dates:nth-child(2){	background-color: #FFB025;}
+
+.box-dashboard-dates:nth-child(3){	background-color: #4EB99F;}
+
+.box-dashboard-dates:nth-child(4){	background-color: #058588;}
+
+
+#contenido-forum, #contenido-email, #contenido-setting, #contenido-apps, #contenido-chart{
+	display: none;
+}
+
+
+@media (min-width: 800px){
+	
+  }
+
+
+  @media (max-width: 500px){
+
+	/* cabecera */
+	.block-left{
+		width: 40%;
+	}
+
+	#imagen-cabecera{
+		width: 100px !important;
+		height: 100px !important;
+
+	}
+
+	.block-center{
+		display: none;
+		width: 30%;
+	}
+
+	.buscar-lupa{
+		width: 80%;
+	}
+
+	.block-right{
+		margin-right: 20px;
+		width: 40%;
+	}
+
+	i {padding: 0px 15px 0px 15px;
+		font-size: 18px;
+	}
+
+	.block-right-2{
+		display: none;
+	}
+
+	.block-mobile, #abrir{
+		width: 20%;
+		display: flex;
+	}
+
+
+	/* body */
+
+	.estructura-izq{
+		display: none;
+	}
+
+	.estructura-mobile-left{
+		display: none;
+	}
+
+	.estructura-derecha{
+		width: 100%;
+	}
+.cabecera-estructura-dashboard h3{
+	padding-top: 150px;
+	padding-left: 10px;
+}
+
+.header-estructura-dashboard .banner{
+	width: 90%;
+}
+
+.header-estructura-dashboard .banner h2{
+	font-size: 1em;
+}
+
+.header-estructura-dashboard .banner i{
+	font-size: 0.8em;
+}
+
+.box-dashboard-dates{
+	width: 90%;
+}
+  }
